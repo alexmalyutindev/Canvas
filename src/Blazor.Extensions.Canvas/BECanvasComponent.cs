@@ -49,7 +49,7 @@ namespace Blazor.Extensions
         [Parameter]
         public Action<PointerEventArgs> OnPointerMove { get; set; }
 
-        protected readonly string Id = Guid.NewGuid().ToString();
+        public string Id = Guid.NewGuid().ToString();
         protected ElementReference _canvasRef;
 
         public ElementReference CanvasReference => this._canvasRef;
